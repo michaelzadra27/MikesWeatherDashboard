@@ -1,0 +1,51 @@
+body {
+    background-color: darkgray;
+    
+}
+
+.aside {
+    height: 800px;
+    background-color: rgb(134, 134, 134);
+}
+
+.interface {
+    height:50%;
+    border: linen solid 5px;
+}
+
+.maincontent {
+    background-color: rgb(219, 219, 219);
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    height:60%;
+}
+
+.fiveday {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.search-container {
+    height:10%;
+    margin-top:10px;
+}
+
+.recent-searches {
+    background-color:rgb(158, 157, 157);
+    height:85%;
+    margin: 5%;
+
+}
