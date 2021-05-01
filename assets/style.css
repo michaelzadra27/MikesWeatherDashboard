@@ -49,3 +49,11 @@ body {
     margin: 5%;
 
 }
+
+.current-forecast {
+    font-style: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    
+
+}

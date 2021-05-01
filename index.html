@@ -11,7 +11,7 @@
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/style.css" />
 
-    <title>Hello, world!</title>
+    <title>What's the Temp?</title>
 </head>
 
 <body>
@@ -30,9 +30,9 @@
                 <div class="search-container">
                     <div class="input-group">
                         <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
-                          aria-describedby="search-addon" />
+                            aria-describedby="search-addon" />
                         <button type="button" class="btn btn-outline-primary">search</button>
-                      </div>
+                    </div>
                 </div>
                 <div class="recent-searches">
 
@@ -41,11 +41,23 @@
 
             </aside>
             <main class="col-9 maincontent">
-                <div class="row interface currentcity">Main Dashboard Container</div>
+                <div class="row interface currentcity">
+                    <div class="current-forecast">
+                        <div id='weather-img'></div>
+                        <h2 id ="current-city">Chico</h2>
+                        <p id="current-temp">90.9</p>
+                        <p id="current-hum">10%</p>
+                        <p id="current-wind">2.3 MPH</p>
+                        <p id="current-uv"></p>
+                    </div>
+                </div>
+                
+                
+                
                 <div class="row interface fiveday">
                     <div class="card col-2">
                         <div class="card-body">
-                            <h5 class="card-title">Chico, CA</h5>
+                            <h5 id ="card-title-one">Chico, CA</h5>
                             <h6 class="card-subtitle mb-2">Temp: 55</h6>
                             <p class="card-text">Humidity Info</p>
                             <div id="img-container"></div>
