@@ -162,7 +162,6 @@ function updateFiveDay(data2) {
 
 
     for (var i = 0; i < 33; i += 8) {
-
         //remove old stuff
         // if (document.contains(document.getElementById('handle'))){
         //     //cardContainer.parentNode.removeChild(cardContainer)
@@ -172,10 +171,8 @@ function updateFiveDay(data2) {
         //     cardHeader.innerHTML = ''
         // }
 
-
-
-        
-        var date = data2.list[i].dt_txt
+        console.log(data2)
+        var dateString = moment.unix(data2.list[i].dt).format("MM/DD/YYYY");
         var temp = data2.list[i].main.temp
         var city = data2.city.name
         var humidity = data2.list[i].main.humidity
@@ -209,8 +206,8 @@ function updateFiveDay(data2) {
         cardHeader.innerHTML = city
         cardTemp.innerHTML = temp + " °"
         cardHumidity.innerHTML = "Humidity: " + humidity + ' %'
-        cardDate.innerHTML = date
-
+        cardDate.innerHTML = dateString
+        console.log(dateString)
 
     }
 
