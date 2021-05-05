@@ -16,11 +16,12 @@ var fiveDayUrl = "https://api.openweathermap.org/data/2.5/forecast?q=Sacramento&
 
 
 //var apiKey = "9b10ba0f1eb331935dd772c9d1676bf9"
-
+var testj = $('.display-4')
 var search = document.querySelector('.search')
 var btn = document.querySelector('.btn')
 var cityInput = document.getElementById('inputValue')
 
+console.log(testj)
 btn.addEventListener('click', getInput)
 //DOM Acess for Today
 var currentCityEl = document.getElementById("current-city")
@@ -158,18 +159,14 @@ function updateFiveDay(data2) {
     }
     
     //dateEl.innerHTML = timeConverter(0)
+    var fivedayEl = $('#fiveforecast')
 
+    fivedayEl.empty();
 
 
     for (var i = 0; i < 33; i += 8) {
-        //remove old stuff
-        // if (document.contains(document.getElementById('handle'))){
-        //     //cardContainer.parentNode.removeChild(cardContainer)
-        //     fiveForcast.innerHTML = ''
-        //     cardContainer.innerHTML = ''
-        //     cardBody.innerHTML = ''
-        //     cardHeader.innerHTML = ''
-        // }
+      
+      
 
         console.log(data2)
         var dateString = moment.unix(data2.list[i].dt).format("MM/DD/YYYY");
@@ -179,7 +176,7 @@ function updateFiveDay(data2) {
         var img = document.createElement("img")
         img.src = "http://openweathermap.org/img/wn/" + data2.list[i].weather[0].icon + ".png"
 
-        fiveForcast = document.getElementById('fiveforecast')
+        futureCast = document.getElementById('fiveforecast')
         cardContainer = document.createElement('div')
         cardBody = document.createElement('div')
         cardHeader = document.createElement('h5')
